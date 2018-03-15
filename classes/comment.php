@@ -7,6 +7,8 @@ class Comment {
     private $comment_user_id;
     private $comment_comment_id;
     private $comment_description;
+    private $comment_status;
+    private $comment_status_reason;
 
     public function getComment_Id(){
         return $this->comment_id;
@@ -50,6 +52,24 @@ class Comment {
 
     public function setComment_Description($comment_description){
         $this->comment_description = $comment_description;
+        return $this;
+    }
+
+    public function getComment_Status(){
+        return $this->comment_status;
+    }
+
+    public function setComment_Status($comment_status){
+        $this->comment_status = $comment_status;
+        return $this;
+    }
+
+    public function getComment_Status_Reason(){
+        return $this->comment_status_reason;
+    }
+
+    public function setComment_Status_Reason($comment_status_reason){
+        $this->comment_status_reason = $comment_status_reason;
         return $this;
     }
 }

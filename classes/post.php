@@ -18,6 +18,7 @@ class Post {
     private $post_tags;
     private $post_description;
     private $post_category;
+    //Site, Facebook, Instagram, Twitter
     private $post_references;
     private $post_rating;
     private $post_status;
