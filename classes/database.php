@@ -35,7 +35,11 @@ abstract class Database{
     private function connect(){
         try
         {
-            $this->conexao = new PDO($this->getDBType().":host=".$this->getHost().";port=".$this->getPort().";dbname=".$this->getDB(), $this->getUser(), $this->getPassword());
+            if(isset($conexao)){
+                $this->conexao;
+            }else {
+                $this->conexao = new PDO($this->getDBType().":host=".$this->getHost().";port=".$this->getPort().";dbname=".$this->getDB(), $this->getUser(), $this->getPassword());
+            }
         }
         catch (PDOException $i)
         {
@@ -51,7 +55,7 @@ abstract class Database{
     }
      
     /*Método select que retorna um VO ou um array de objetos*/
-    public function selectDB($sql,$params=null,$class=null){
+    public function selectDB($sql,$params=null,$class=null){        
         $query=$this->connect()->prepare($sql);
         $query->execute($params);
          

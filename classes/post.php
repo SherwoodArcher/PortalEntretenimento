@@ -4,16 +4,21 @@ class Post {
 
     private $post_id;
     private $post_title;
-    private $post_creator;
+    private $post_user_id;
     private $post_date_time;
     private $post_photos;
     private $post_operating_hours_start;
     private $post_operating_hours_end;
     private $post_days_of_operation;
+    private $post_event_date_start;
+    private $post_event_date_end;
+    private $post_cep;
+    private $post_address_details;
     private $post_price;
     private $post_tags;
     private $post_description;
     private $post_category;
+    private $post_references;
     private $post_rating;
     private $post_status;
     private $post_status_reason;
@@ -36,12 +41,12 @@ class Post {
         return $this;
     }
 
-    public function getPost_Creator(){
-        return $this->post_creator;
+    public function getPost_User_Id(){
+        return $this->post_user_id;
     }
 
-    public function setPost_Creator($post_creator){
-        $this->post_creator = $post_creator;
+    public function setPost_User_Id($post_user_id){
+        $this->post_user_id = $post_user_id;
         return $this;
     }
 
@@ -89,7 +94,42 @@ class Post {
         $this->post_days_of_operation = $post_days_of_operation;
         return $this;
     }
-  
+
+    public function getPost_Event_Date_Start(){
+        return $this->post_event_date_start;
+    }
+
+    public function setPost_Event_Date_Start($post_event_date_start){
+        $this->post_event_date_start = $post_event_date_start;
+        return $this;
+    }
+
+    public function getPost_Event_Date_End(){
+        return $this->post_event_date_end;
+    }
+    public function setPost_Event_Date_End($post_event_date_end){
+        $this->post_event_date_end = $post_event_date_end;
+        return $this;
+    }
+      
+    public function getPost_Cep(){
+        return $this->post_cep;
+    }
+
+    public function setPost_Cep($post_cep){
+        $this->post_cep = $post_cep;
+        return $this;
+    }
+
+    public function getPost_Adress_Details(){
+        return $this->post_address_details;
+    }
+
+    public function setPost_Adress_Details($post_address_details){
+        $this->post_address_details = $post_address_details;
+        return $this;
+    }
+
     public function getPost_Price(){
         return $this->post_price;
     }
@@ -123,6 +163,15 @@ class Post {
 
     public function setPost_Category($post_category){
         $this->post_category = $post_category;
+        return $this;
+    }
+    
+    public function getPost_References(){
+        return $this->post_references;
+    }
+
+    public function setPost_References($post_references){
+        $this->post_references = $post_references;
         return $this;
     }
 
