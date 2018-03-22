@@ -1,6 +1,7 @@
 <?php
+include_once "classes/database.php";
 
-class User {
+class User extends Database {
 
     private $user_id;
     private $user_name;
@@ -143,5 +144,9 @@ class User {
     public function setUser_status($user_status)    {
         $this->user_status = $user_status;
         return $this;
+    }
+
+    public function __construct(){
+        
     }
 }

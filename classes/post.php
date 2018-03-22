@@ -1,6 +1,7 @@
 <?php
+include_once "classes/database.php";
 
-class Post {
+class Post extends Database{
 
     private $post_id;
     private $post_title;
@@ -201,6 +202,10 @@ class Post {
     public function setPost_Status_Reason($post_status_reason){
         $this->post_status_reason = $post_status_reason;
         return $this;
+    }
+
+    public function __construct(){
+        
     }
 }
 

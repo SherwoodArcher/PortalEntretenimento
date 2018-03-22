@@ -20,8 +20,8 @@ abstract class Database{
     private static $host     = "localhost";
     private static $port     = "3306";
     private static $user     = "root";
-    private static $password = "123";
-    private static $db       = "teste";
+    private static $password = "";
+    private static $db       = "portalentretenimento";
      
     /*Metodos que trazem o conteudo da variavel desejada
     @return   $xxx = conteudo da variavel solicitada*/
@@ -38,7 +38,7 @@ abstract class Database{
             if(isset($conexao)){
                 $this->conexao;
             }else {
-                $this->conexao = new PDO($this->getDBType().":host=".$this->getHost().";port=".$this->getPort().";dbname=".$this->getDB(), $this->getUser(), $this->getPassword());
+                $this->conexao = new PDO($this->getDBType().":host=".$this->getHost().";port=".$this->getPort().";dbname=".$this->getDB(), $this->getUser(), $this->getPassword(),array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             }
         }
         catch (PDOException $i)

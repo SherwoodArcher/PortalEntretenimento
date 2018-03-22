@@ -1,6 +1,7 @@
 <?php
+include_once "classes/database.php";
 
-class Category {
+class Category extends Database {
 
     private $category_id;
     private $category_level;
@@ -52,6 +53,10 @@ class Category {
         $this->category_status = $category_status;
         return $this;
     }
-}
 
+    public function __construct(){
+        
+    }
+
+}
 ?>

@@ -1,6 +1,7 @@
 <?php
+include_once "classes/database.php";
 
-class Comment {
+class Comment extends Database {
 
     private $comment_id;
     private $comment_post_id;
@@ -71,6 +72,10 @@ class Comment {
     public function setComment_Status_Reason($comment_status_reason){
         $this->comment_status_reason = $comment_status_reason;
         return $this;
+    }
+
+    public function __construct(){
+        
     }
 }
 
