@@ -18,8 +18,8 @@ class Usuario extends CI_Controller {
 	{		
         $dados['title'] = "Cadastro de usuário";
         $this->load->helper('form');
-        $this->load->library('form-validation');
-        $this->form_validation->set_rules('Nme');
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('Nome');
         $this->load->view('newuser',$dados);        
     }
     

@@ -7,9 +7,7 @@
         </div>
 
         <div class="padding10px">            
-            <?php 
-            $attributes['form'] = ['class' => 'form-horizontal'];
-            echo form_open('usuario/novo',$attributes['form']); ?>
+            <?php echo form_open('usuario/novo','class=form-horizontal'); ?>
                 <fieldset>
                     <div class="panel panel-primary">
                         <div class="panel-heading"><h4>Cadastro de usuário</h4></div>
@@ -21,15 +19,13 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
                                 <div class="col-md-8">
-                                    <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                                    <input id="Nome" name="Nome" placeholder="" value="<?php echo set_value('Nome'); ?>" class="form-control input-md" required="" type="text">
                                 </div>
                             </div>
 
-                            <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
                                 <div class="col-md-2">
@@ -40,8 +36,6 @@
                                 <div class="col-md-2">
                                     <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
                                 </div>
-
-                                <!-- Multiple Radios (inline) -->
 
                                 <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
                                 <div class="col-md-4"> 
@@ -60,7 +54,6 @@
                                 </div>
                             </div>
 
-                            <!-- Search input-->
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
                                 <div class="col-md-2">
@@ -70,8 +63,7 @@
                                     <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
                                 </div>
                             </div>
-
-                            <!-- Prepended text-->
+                            
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
                                 <div class="col-md-4">
@@ -79,16 +71,14 @@
                                         <span class="input-group-addon">Rua</span>
                                         <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
                                     </div>
-
                                 </div>
+
                                 <div class="col-md-2">
                                     <div class="input-group">
                                         <span class="input-group-addon">Nº <h11>*</h11></span>
                                         <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
                                     </div>
-
                                 </div>
-
 
                                 <div class="col-md-3">
                                     <div class="input-group">
@@ -127,8 +117,6 @@
                                 </div>
                             </div>
 
-
-                            <!-- Prepended text-->
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
                                 <div class="col-md-5">
@@ -156,102 +144,6 @@
                                 </div>
                             </div>
 
-                            <!-- Text input-->
-                            <!-- <div class="form-group">
-
-                                <label class="col-md-2 control-label" for="checkboxes">Preferências</label>
-                                <div class="col-md-10"> 
-                                    <label class="checkbox-inline" for="checkboxes-0" >
-                                        <input name="checkboxes-0" id="checkboxes-0" value="tag0" type="checkbox">
-                                        Tag 0
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-1">
-                                        <input name="checkboxes-1" id="checkboxes-1" value="tag1" type="checkbox">
-                                        Tag 1
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-2">
-                                        <input name="checkboxes-2" id="checkboxes-2" value="tag2" type="checkbox">
-                                        Tag 2
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-3" >
-                                        <input name="checkboxes-3" id="checkboxes-3" value="tag3" type="checkbox">
-                                        Tag 3
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-4">
-                                        <input name="checkboxes-4" id="checkboxes-4" value="tag4" type="checkbox">
-                                        Tag 4
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-5">
-                                        <input name="checkboxes-5" id="checkboxes-5" value="tag5" type="checkbox">
-                                        Tag 5
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-6" >
-                                        <input name="checkboxes-6" id="checkboxes-6" value="tag6" type="checkbox">
-                                        Tag 6
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-7">
-                                        <input name="checkboxes-7" id="checkboxes-7" value="tag7" type="checkbox">
-                                        Tag 7
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-8">
-                                        <input name="checkboxes-8" id="checkboxes-8" value="tag8" type="checkbox">
-                                        Tag 8
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-9">
-                                        <input name="checkboxes-9" id="checkboxes-9" value="tag9" type="checkbox">
-                                        Tag 9
-                                    </label>                                                                                                
-                                </div>
-                            </div>
-
-                            
-                            <div class="form-group">
-
-                                <label class="col-md-2 control-label" for="checkboxes"></label>
-                                <div class="col-md-10"> 
-                                    <label class="checkbox-inline" for="checkboxes-0" >
-                                        <input name="checkboxes-0" id="checkboxes-0" value="tag0" type="checkbox">
-                                        Tag 10
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-1">
-                                        <input name="checkboxes-1" id="checkboxes-1" value="tag1" type="checkbox">
-                                        Tag 11
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-2">
-                                        <input name="checkboxes-2" id="checkboxes-2" value="tag2" type="checkbox">
-                                        Tag 12
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-3" >
-                                        <input name="checkboxes-3" id="checkboxes-3" value="tag3" type="checkbox">
-                                        Tag 13
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-4">
-                                        <input name="checkboxes-4" id="checkboxes-4" value="tag4" type="checkbox">
-                                        Tag 14
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-5">
-                                        <input name="checkboxes-5" id="checkboxes-5" value="tag5" type="checkbox">
-                                        Tag 15
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-6" >
-                                        <input name="checkboxes-6" id="checkboxes-6" value="tag6" type="checkbox">
-                                        Tag 16
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-7">
-                                        <input name="checkboxes-7" id="checkboxes-7" value="tag7" type="checkbox">
-                                        Tag 17
-                                    </label>
-                                    <label class="checkbox-inline" for="checkboxes-8">
-                                        <input name="checkboxes-8" id="checkboxes-8" value="tag8" type="checkbox">
-                                        Tag 18
-                                    </label> 
-                                    <label class="checkbox-inline" for="checkboxes-9">
-                                        <input name="checkboxes-9" id="checkboxes-9" value="tag9" type="checkbox">
-                                        Tag 19
-                                    </label>                                                                                                
-                                </div>
-                            </div> -->
-                            <!-- Button (Double) -->
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="Cadastrar"></label>
                                 <div class="col-md-8">
@@ -265,7 +157,7 @@
 
 
                 </fieldset>
-                <?php echo form_close(); ?>
+                <?php echo form_close();?>
             <!-- </form> -->
         </div>
         <!-- Fim do conteudo -->
