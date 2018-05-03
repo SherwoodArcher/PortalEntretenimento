@@ -20,21 +20,24 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
+                                <label class="col-md-2 control-label" for="nome">Nome <h11>*</h11></label>  
                                 <div class="col-md-8">
-                                    <input id="Nome" name="Nome" placeholder="" value="<?php echo set_value('Nome'); ?>" class="form-control input-md" required="" type="text">
+                                    <input id="nome" name="nome" placeholder="" value="<?php echo set_value('nome'); ?>" class="form-control input-md" required="" type="text">
+                                    <?php echo form_error('nome');?>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
+                                <label class="col-md-2 control-label" for="cpf">CPF <h11>*</h11></label>  
                                 <div class="col-md-2">
-                                    <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
-                                </div>
+                                    <input id="cpf" name="cpf" placeholder="Apenas números"  value="<?php echo set_value('cpf'); ?>" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+                                    <?php echo form_error('cpf');?>
+                               </div>
 
-                                <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>  
+                                <label class="col-md-1 control-label" for="dtnasc">Nascimento<h11>*</h11></label>  
                                 <div class="col-md-2">
-                                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA"  value="<?php echo set_value('dtnasc'); ?>" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                                    <?php echo form_error('dtnasc');?>
                                 </div>
 
                                 <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
@@ -55,9 +58,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+                                <label class="col-md-2 control-label" for="cep">CEP <h11>*</h11></label>
                                 <div class="col-md-2">
-                                    <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                                    <input id="cep" name="cep" placeholder="Apenas números"  value="<?php echo set_value('cep'); ?>" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                                    <?php echo form_error('cep');?>
                                 </div>
                                 <div class="col-md-2">
                                     <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
@@ -65,25 +69,28 @@
                             </div>
                             
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+                                <label class="col-md-2 control-label" for="rua">Endereço</label>
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <span class="input-group-addon">Rua</span>
-                                        <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+                                        <input id="rua" name="rua" class="form-control" placeholder="Rua"  value="<?php echo set_value('rua'); ?>" required="" readonly="readonly" type="text">
+                                        <?php echo form_error('rua');?>
                                     </div>
                                 </div>
 
                                 <div class="col-md-2">
                                     <div class="input-group">
                                         <span class="input-group-addon">Nº <h11>*</h11></span>
-                                        <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
+                                        <input id="numero" name="numero" class="form-control" placeholder=""  value="<?php echo set_value('numero'); ?>" required=""  type="text">
+                                        <?php echo form_error('numero');?>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <span class="input-group-addon">Complemento</span>
-                                        <input id="complemento" name="complemento" class="form-control" placeholder="Apto nº" required=""  type="text">
+                                        <input id="complemento" name="complemento" class="form-control" placeholder="Apto nº"  value="<?php echo set_value('complemento'); ?>" required=""  type="text">
+                                        <?php echo form_error('complemento');?>
                                     </div>
 
                                 </div>
@@ -95,7 +102,8 @@
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <span class="input-group-addon">Bairro</span>
-                                        <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+                                        <input id="bairro" name="bairro" class="form-control" placeholder="Bairro"  value="<?php echo set_value('bairro'); ?>" required="" readonly="readonly" type="text">
+                                        <?php echo form_error('bairro');?>
                                     </div>
 
                                 </div>
@@ -103,7 +111,8 @@
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <span class="input-group-addon">Cidade</span>
-                                        <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+                                        <input id="cidade" name="cidade" class="form-control" placeholder="Cidade"  value="<?php echo set_value('cidade'); ?>" required=""  readonly="readonly" type="text">
+                                        <?php echo form_error('cidade');?>
                                     </div>
 
                                 </div>
@@ -111,35 +120,40 @@
                                 <div class="col-md-2">
                                     <div class="input-group">
                                         <span class="input-group-addon">Estado</span>
-                                        <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+                                        <input id="estado" name="estado" class="form-control" placeholder="Estado"  value="<?php echo set_value('Estado'); ?>" required=""  readonly="readonly" type="text">
+                                        <?php echo form_error('estado');?>
                                     </div>
 
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+                                <label class="col-md-2 control-label" for="email">Email <h11>*</h11></label>
                                 <div class="col-md-5">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                                        <input id="email" name="email" class="form-control" placeholder="email@email.com"  value="<?php echo set_value('email'); ?>" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                                        <?php echo form_error('email');?>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="prependedtext">Senha <h11>*</h11></label>
+                                <label class="col-md-2 control-label" for="senha">Senha <h11>*</h11></label>
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="********" required type="password">
+                                        <input id="senha" name="senha" class="form-control" placeholder="********"  value="<?php echo set_value('senha'); ?>" required type="password">
+                                        <?php echo form_error('senha');?>
                                     </div>
+
                                 </div>
-                                <label class="col-md-2 control-label" for="prependedtext">Confirme sua senha <h11>*</h11></label>
+                                <label class="col-md-2 control-label" for="confirmeSenha">Confirme sua senha <h11>*</h11></label>
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="********" required type="password">
+                                        <input id="confirmSenha" name="confirmeSenha" class="form-control" placeholder="********"  value="<?php echo set_value('confirmeSenha'); ?>" required type="password">
+                                        <?php echo form_error('confirmeSenha');?>
                                     </div>
                                 </div>
                             </div>
