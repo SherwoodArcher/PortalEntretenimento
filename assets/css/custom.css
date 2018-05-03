@@ -1,0 +1,1037 @@
+/*Inicio das animações */
+
+@keyframes descontracao {
+0%{background-color:#ff4d4d}
+100%{background-color:#ff9933}
+}
+
+@keyframes emmovimento {
+0%{background-color:#ff4d4d}
+50%{background-color:#ff9933}
+100%{background-color:#ffff4d}
+}
+
+@keyframes nafaixa {
+0%{background-color:#ff4d4d}
+33%{background-color:#ff9933}
+66%{background-color:#ffff4d}
+100%{background-color:#4dff4d}
+}
+
+@keyframes geek {
+0%{background-color:#ff4d4d}
+25%{background-color:#ff9933}
+50%{background-color:#ffff4d}
+75%{background-color:#4dff4d}
+100%{background-color:#8080ff}
+}
+
+@keyframes cultural {
+0%{background-color:#ff4d4d}
+20%{background-color:#ff9933}
+40%{background-color:#ffff4d}
+60%{background-color:#4dff4d}
+80%{background-color:#8080ff}
+100%{background-color:#af4dff}
+}
+
+/*Fim das animações */
+
+
+/* Inicio da Barra de Navegação */
+
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+background-color: #212121;
+color: #FFFFFF;
+padding: 0;
+font-size: 14px;
+border: 0;
+}
+
+.navbar-brand{
+float:left;
+min-height: 45px;
+padding: 0 15px 15px;
+}
+
+.navbar-inverse .navbar-nav .active a, 
+.navbar-inverse .navbar-nav .active a:focus, 
+.navbar-inverse .navbar-nav .active a:hover {
+color: #FFFFFF;
+}
+
+.nomeLogo{
+float: left;
+padding-top: 16px;	
+font-size: 24px;
+}
+
+.navbar-toggle {
+float: left;
+margin-left: 15px;
+margin-right: 0;
+}
+.navbar-nav>li>a {
+padding-left: 8px;
+padding-right: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+.mobile-hide {
+display: none !important;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.mobile{
+display: inline !important;
+
+}
+}
+
+@media only screen and (min-width: 768px) {
+.desktop-hide{
+display: none !important;
+}
+}
+
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#search .linkBranco {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+
+@media only screen and (max-width: 767px) {
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#search .linkBranco {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+}
+
+
+
+#login {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#login.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#login .login {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login input[type="email"] {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login label[for="email"] {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login input[type="password"] {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login label[for="senha"] {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login .linkBranco {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+#login {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#login.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#login .login {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login input[type="email"] {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login label[for="email"] {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login input[type="password"] {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login label[for="senha"] {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login .linkBranco {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#login .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+}
+
+#esqueci {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#esqueci.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#esqueci .esqueci {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci input[type="email"] {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci label[for="email"] {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci .linkBranco {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+@media only screen and (max-width: 767px) {
+
+#esqueci {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#esqueci.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+}
+
+#esqueci .esqueci {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci input[type="email"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci label[for="email"] {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci .linkBranco {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+
+#esqueci .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	opacity: 1;
+	padding: 0px 0px;
+	font-size: 27px;
+}
+
+}
+
+
+
+/* Fim da Barra de navegação */
+
+
+/* Página Principal */
+
+.formatacaoTexto{
+font-family: Myanmar Text, Arial;
+padding-top: 5px; 
+text-align: center;
+font-size: 20px;
+color: #000000;
+text-shadow: 0 0 1px #555;
+}
+
+.efeitoOpacidade{
+opacity: 0.85;
+filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.efeitoOpacidade:hover{
+opacity: 1.0;
+filter: alpha(opacity=100); /* For IE8 and earlier */
+} 
+
+.partiuRole{
+background-color: #ff4d4d;
+float: center;
+}
+
+.descontracao{
+background-color: #ff9933;
+animation-name: descontracao;
+animation-duration: 2s;
+float: center;
+}
+
+
+.emMovimento{
+background-color: #ffff4d;
+animation-name: emmovimento;
+animation-duration: 3s;
+float: center;
+}
+
+.naFaixa{
+background-color: #4dff4d;
+animation-name: nafaixa;
+animation-duration: 4s;
+float: center;
+}
+
+.geek{
+background-color: #8080ff; 
+animation-name: geek;
+animation-duration: 5s;
+float: center;
+}
+
+.cultural{
+background-color: #af4dff;
+animation-name: cultural;
+animation-duration: 6s;
+float: center;
+}
+
+/*Fim da Página Principal*/
+
+/*Categorias / Posts */
+.page-header {
+padding-bottom: 9px;
+margin: 10px 0 10px;
+border-bottom: 1px solid #eee;
+}
+
+.breadcrumb{
+border-radius: 0px;
+}
+
+.breadcrumb>li>a {
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.breadcrumb > .active {
+color: #000;
+}
+
+.breadcrumb emMovimento > .active{
+    color: black;
+}
+
+/*Fim das Categorias/Posts */
+
+/* Configurações gerais */
+body{
+
+margin:auto;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+padding:0px;
+padding-top: 50px;
+}
+
+.float-right{
+float: right;
+}
+
+.float-left{
+float: left;
+}
+
+.gutter-10.row {
+margin-right: -10px;
+margin-left: -10px;
+}
+
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+padding-right: 5px;
+padding-left: 5px;
+}
+
+.margem10pxTopo{
+margin-top: 10px;
+}
+
+.padding10px{
+padding: 10px;
+}
+
+.padding10pxLR{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.padding10pxL{
+padding-left: 10px;
+}
+
+.padding10pxTopo{
+padding-top: 10px;
+}
+
+.noPadding{
+padding: 0px;
+}
+.padding5pxTopo{
+padding: 0px;
+padding-top: 5px;
+}
+
+.corPadrao{
+background-color: #000000;
+}
+
+.corPartiuRole{
+background-color: #ff4d4d;
+}
+
+.corDescontracao{
+background-color: #ff9933;
+}
+
+.corEmMovimento{
+background-color: #ffff4d;
+}
+
+.corNaFaixa{
+background-color: #4dff4d;
+}
+
+.corGeek{
+background-color: #8080ff; 
+}
+
+.corCultural{
+background-color: #af4dff;
+}
+
+.linkBranco>a,
+.linkBranco>a:focus,
+.linkBranco>a:hover,
+.corPadrao>a,
+.corPadrao>a:focus,
+.corPadrao>a:hover,
+.corPartiuRole>a,
+.corPartiuRole>a:focus,
+.corPartiuRole>a:hover,
+.corDescontracao>a,
+.corDescontracao>a:focus,
+.corDescontracao>a:hover,
+.corEmMovimento>a,
+.corEmMovimento>a:focus,
+.corEmMovimento>a:hover,
+.corNaFaixa>a,
+.corNaFaixa>a:focus,
+.corNaFaixa>a:hover,
+.corGeek>a,
+.corGeek>a:focus,
+.corGeek>a:hover,
+.corCultural>a,
+.corCultural>a:focus,
+.corCultural>a:hover
+{
+color: #FFFFFF;
+}
+.linkPreto,
+.linkPreto>a,
+.linkPreto>a:focus,
+.linkPreto>a:hover
+{
+color: #000000;
+}
+
+
+.thumbnail{
+border-radius: 0px;
+}
+
+.panel-primary {
+border-color: #000;
+}
+
+
+.panel-primary>.panel-heading{
+background-color: #000;
+border-color: #000;
+}
+
+.panel,
+.panel-heading{
+border-radius: 0px;
+}
+
+.relative{
+position: relative !important;
+}
+
+
+.calendarioIndex{
+font-family: Myanmar Text, Arial;
+font-size: 20px;
+color: #000000;
+text-shadow: 0 0 1px #555;
+}
+.textCenter{
+text-align: center;
+}
+.textLeft{
+text-align: left;
+}
+.textRight{
+text-align: right;
+}
+
+
+/* Fim das Configurações Gerais */

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Boom - Onde a diversão nao estoura o bolso</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <script src="busca.js"></script>
+        <script src="login.js"></script>
+        <script src="esqueci.js"></script>
+
+        <!-- Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Boom" />
+        <meta name="description" content="Boom - Onde você encontra a diversão que você procura, no preço justo e o mais próximo possível" />
+        <meta name="keywords" content="boom, diversão, entretenimento, na faixa" />
+        <meta property="og:url" content="http://booom.azurewebsites.net/" />
+        <meta property="og:title" content="Boom | Onde a diversão não estoura o bolso" />
+        <meta property="og:description" content="Boom - Onde você encontra a diversão que você procura, no preço justo e o mais próximo possível" />
+        <meta property="og:image" content="/favicon-360x360.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="36x36" href="/android-icon-36x36.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/android-icon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="72x72" href="/android-icon-72x72.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="144x144" href="/android-icon-144x144.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#000000" />
+
+    </head>
+    <body>
+
+        <!-- Inicio da Barra de Navegação -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Botão para utilizar em resposividade -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#BarraDeNavegacao">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Logo do Site -->
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+                    <div class="nomeLogo">Boom</div>
+
+                    <div class="mobile navbar-toggle float-right" style="margin-right: 3.5%;">
+                        <div class="desktop-hide linkBranco">
+                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>                  
+                        </div>
+                    </div>
+
+                    <div class="mobile navbar-toggle float-right">
+                        <div class="desktop-hide linkBranco">
+                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>                     
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="BarraDeNavegacao">
+                    <!-- Categorias da Barra de Navegação -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="partiurole.html">Partiu Rolê</a></li>
+                        <li><a href="descontracao.html">Descontração</a></li>
+                        <li><a href="emmovimento.html">Em Movimento</a></li>
+                        <li><a href="nafaixa.html">Na Faixa</a></li>
+                        <li><a href="geek.html">Geek</a></li>
+                        <li><a href="cultural.html">Cultural</a></li>
+                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>                    
+                        <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                    <!-- Fim das Categorias da Barra de Navegação -->
+
+                </div>
+                <!-- Fim da Div Container -->
+        </nav>
+
+
+        <div id="search">
+            <div class="close">×</div>
+            <form>
+                <input type="search" value="" placeholder="digite aqui ..." />
+                <div class="linkBranco">
+                    <a type="submit">procurar</a>
+                </div>
+            </form>
+        </div>
+
+        <div id="login">
+            <div class="close">×</div>
+            <form>
+                <div class="login">login</div>
+                <label for="email">usuário:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
+
+                <label for="senha">senha:</label><br/>
+                <input type="password" id="senha" required placeholder="********" /><br/>
+                <div class="linkBranco">
+                    <a type="submit">entrar</a><br/><br/>
+                    <a href="cadastrousuario.html">não é cadastrado? cadastre-se aqui!</a><br/><br/>
+                    <a href="#esqueci">esqueceu sua senha? clique aqui</a>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="esqueci">
+            <div class="close">×</div>
+            <form>
+                <div class="esqueci">esqueci minha senha</div>
+                <label for="email">email:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
+
+                <div class="linkBranco">
+                    <a type="submit">reenviar senha</a><br/><br/>
+                </div>
+            </form>
+        </div>        
+        <!-- Fim da Barra de Navegação -->
+
+
+        <!-- Inicio do conteudo -->
+
+
+        <div>
+            <ol class="breadcrumb corCultural">
+                <li><a href="index.html" style="color: #000000">Boom</a></li>
+                <li><a href="cultural.html" style="color: #000000">Cultural</a></li>
+                <li class="active">Temporada 2018 - Theatro Municipal</li>
+            </ol>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <!-- Titulo da seção -->      
+                    <div class="page-header">
+                        <h1>Temporada 2018 - Theatro Municipal</h1>
+                        <!-- Author -->
+                        <p class="lead">
+                            postagem de 
+                            <a href="#"> Fulano de Tal</a> <small>no dia 01 de dezembro às 13:00</small>
+                        </p>
+                    </div>
+                    <!-- Fim Titulo da seção -->
+
+                    <div class="row">    
+
+                        <div class="col-md-12 col-lg-8 margem10pxTopo">
+                            <!-- Inicio do Slider -->
+                            <div id="sliderDestaques" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#sliderDestaques" data-slide-to="0" class="active"></li>
+                                    <li data-target="#sliderDestaques" data-slide-to="1"></li>
+                                    <li data-target="#sliderDestaques" data-slide-to="2"></li>
+                                </ol>
+
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Slide Ativo -->
+                                    <div class="item active">
+                                        <img src="img/mountains.png">
+                                    </div>
+                                    <!-- Fim do Slide Ativo -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="item">
+                                        <img src="img/snow.png">
+                                    </div>
+                                    <!-- Fim Slide 2 -->
+
+                                    <!-- Slide 3 -->
+                                    <div class="item">
+                                        <img src="img/red.png">
+                                    </div>
+                                    <!-- Fim Slide 3 -->
+                                </div>
+
+                                <!-- Inicio dos Controles do Slider -->
+                                <a class="left carousel-control" href="#sliderDestaques" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="right carousel-control" href="#sliderDestaques" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Próximo</span>
+                                </a>      
+                                <!-- Fim dos Controles do Slider -->
+
+                            </div> 
+                            <!-- Fim do Slider -->
+
+                        </div>
+
+                        <div class="col-md-12 col-lg-4 margem10pxTopo">
+
+                            <div class="row"> 
+
+                                <div class="col-sm-6 col-lg-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Serviço</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p> Local: Praça Ramos, s/n - São Paulo</p>  
+                                            <p> Horário: das 19:00 às 23:00</p> 
+                                            <p> Valor: a partir de R$ 0,00</p> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Tags</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <span class="label corCultural"><a href="#">#Música Clássica</a></span>
+                                            <span class="label corDescontracao"><a href="#">#Espetáculo</a></span>
+                                            <span class="label corCultural"><a href="#">#Theatro Municipal</a></span>
+                                            <span class="label corCultural"><a href="#">#Cultura</a></span>
+                                            <span class="label corPadrao"><a href="#">#Centro</a></span>
+                                            <span class="label corCultural"><a href="#">#Teatro</a></span>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 margem10pxTopo">
+                            <!-- Conteúdo do Post-->
+                            <p class="lead">A Orquestra Sinfônica Municipal – OSM – encontra o Coro Lírico, o Coral Paulistano, o Quarteto de Cordas, e solistas e maestros convidados em grandes repertórios da música de concerto.</p>
+
+                            <p>A direção cênica será de Cleber Papa. Já a musical fica a cargo do maestro Roberto Minczuk, regente titular da Orquestra Sinfônica Municipal de São Paulo. O Coro Lírico Municipal está sendo preparado pelo maestro Mário Zaccaro.</p>
+
+                            <!-- Citação destaque-->
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"A OSM vive um ótimo momento. Estou lá há quatro anos e vejo uma resposta magnífica do público."</p>
+                                <footer class="blockquote-footer">Roberto Minczuk 
+                                    <cite title="Source Title">Maestro de carreira internacional</cite>
+                                </footer>
+                            </blockquote>
+
+
+                            <hr>
+
+                            <!-- Formulário de comentários -->
+                            <div class="card">
+                                <h5 class="card-header">Deixe seu comentário:</h5>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Fim do formulário -->
+
+
+                            <!-- Comentários -->
+                            <div class="margem10pxTopo"></div>
+                            <ul class="media-list">
+                                <li class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="img/user01-50x50.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5>Usuário 1</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </li>         
+
+                                <li class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="img/user02-50x50.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5>Usuário 2</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                </li>
+
+                                <li><ul class="media-list-2">
+                                        <li class="media">
+                                            <div class="media-left">
+                                                <a href="#"> 
+                                                    <img src="img/user01-50x50.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Re: Usuário 1</h5>
+                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </li>
+
+                                        <li class="media">
+                                            <div class="media-left">
+                                                <a href="#"> 
+                                                    <img src="img/user03-50x50.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Re: Usuário 3</h5>
+                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </li>
+                                    </ul></li>
+
+                            </ul>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fim do conteudo -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="margem10pxTopo">
+                <p class="text-center text-white">Boom &copy; Bandtec 2017</p>
+            </div>
+        </footer>
+        <!-- Fim Footer -->
+
+    </body>
+
+</html>

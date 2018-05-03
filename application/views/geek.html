@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Boom - Geek</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <script src="busca.js"></script>
+        <script src="login.js"></script>
+        <script src="esqueci.js"></script>
+
+        <!-- Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Boom" />
+        <meta name="description" content="Boom - Onde você encontra a diversão que você procura, no preço justo e o mais próximo possível" />
+        <meta name="keywords" content="boom, diversão, entretenimento, na faixa" />
+        <meta property="og:url" content="http://booom.azurewebsites.net/" />
+        <meta property="og:title" content="Boom | Onde a diversão não estoura o bolso" />
+        <meta property="og:description" content="Boom - Onde você encontra a diversão que você procura, no preço justo e o mais próximo possível" />
+        <meta property="og:image" content="/favicon-360x360.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="36x36" href="/android-icon-36x36.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/android-icon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="72x72" href="/android-icon-72x72.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="144x144" href="/android-icon-144x144.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#8080ff" />
+
+    </head>
+    <body>
+
+        <!-- Inicio da Barra de Navegação -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Botão para utilizar em resposividade -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#BarraDeNavegacao">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Logo do Site -->
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+                    <div class="nomeLogo">Boom</div>
+
+                    <div class="mobile navbar-toggle float-right" style="margin-right: 3.5%;">
+                        <div class="desktop-hide linkBranco">
+                            <a href="#search"><span class="glyphicon glyphicon-search"></span></a>                  
+                        </div>
+                    </div>
+
+                    <div class="mobile navbar-toggle float-right">
+                        <div class="desktop-hide linkBranco">
+                            <a href="#login"><span class="glyphicon glyphicon-user"></span></a>                     
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="BarraDeNavegacao">
+                    <!-- Categorias da Barra de Navegação -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="partiurole.html">Partiu Rolê</a></li>
+                        <li><a href="descontracao.html">Descontração</a></li>
+                        <li><a href="emmovimento.html">Em Movimento</a></li>
+                        <li><a href="nafaixa.html">Na Faixa</a></li>
+                        <li><a href="geek.html">Geek</a></li>
+                        <li><a href="cultural.html">Cultural</a></li>
+                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>                    
+                        <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                    <!-- Fim das Categorias da Barra de Navegação -->
+
+                </div>
+                <!-- Fim da Div Container -->
+        </nav>
+
+
+        <div id="search">
+            <div class="close">×</div>
+            <form>
+                <input type="search" value="" placeholder="digite aqui ..." />
+                <div class="linkBranco">
+                    <a type="submit">procurar</a>
+                </div>
+            </form>
+        </div>
+
+        <div id="login">
+            <div class="close">×</div>
+            <form>
+                <div class="login">login</div>
+                <label for="email">usuário:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
+
+                <label for="senha">senha:</label><br/>
+                <input type="password" id="senha" required placeholder="********" /><br/>
+                <div class="linkBranco">
+                    <a type="submit">entrar</a><br/><br/>
+                    <a href="cadastrousuario.html">não é cadastrado? cadastre-se aqui!</a><br/><br/>
+                    <a href="#esqueci">esqueceu sua senha? clique aqui</a>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="esqueci">
+            <div class="close">×</div>
+            <form>
+                <div class="esqueci">esqueci minha senha</div>
+                <label for="email">email:</label>
+                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
+
+                <div class="linkBranco">
+                    <a type="submit">reenviar senha</a><br/><br/>
+                </div>
+            </form>
+        </div>        
+        <!-- Fim da Barra de Navegação -->
+        <!-- Inicio do conteudo -->
+        <div>
+            <ol class="breadcrumb corGeek">
+                <li><a href="index.html" style="color: #000000">Boom</a></li>
+                <li class="active">Geek</li>
+            </ol>
+        </div>
+        <div class="container-fluid">
+
+            <!-- Titulo da seção -->
+
+            <div class="page-header">
+                <h1>Geek<small> - Games, animes, amigos, séries e todas as coisas legais do universo</small></h1>
+            </div>
+
+            <!-- Fim Titulo da seção -->
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/05_geek/geek_04.jpg" alt="Poster Comic Con 2017">
+                        <div class="corGeek" style="height: 5px"></div>
+                        <div class="caption">
+                            <h3>Painel Marvel na Comic Con 2017</h3>
+                            <p>Kevin Feige apresenta vídeos especiais dos lançamentos do estúdio, incluindo Thor: Ragnarok, Pantera Negra, Vingadores: Guerra Infinita e mais.</p>
+                            <p><a href="post_cultural.html" class="">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/05_geek/geek_09.jpg" alt="Mario Bros">
+                        <div class="corGeek" style="height: 5px"></div>
+                        <div class="caption">
+                            <h3>Super Mario Odyssey</h3>
+                            <p>Durante sua apresentação na E3 2017, a Nintendo revelou mais de Super Mario Odyssey, o próximo jogo da linha principal do encanador bigodudo. Super Mario Odyssey será lançado em 27 de outubro de 2017 exclusivamente para...</p>
+                            <p><a href="post_cultural.html" class="">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/05_geek/geek_08.jpg" alt="Nintendo Switch">
+                        <div class="corGeek" style="height: 5px"></div>
+                        <div class="caption">
+                            <h3>Novos games para o Nintendo Switch</h3>
+                            <p>A Capcom tem interesse em levar mais games para o Nintendo Switch e deve focar nos títulos que nunca tinham lançado em consoles da empresa japonesa antes</p>
+                            <p><a href="post_cultural.html" class="">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/05_geek/geek_05.jpg" alt="Jogo Tiro">
+                        <div class="corCultural" style="height: 5px"></div>
+                        <div class="caption">
+                            <h3>Os jogos mais esperados para 2018</h3>
+                            <p>Na última E3 tivemos diversos trailers e apresentações de games que virão por aí. Diversos jogos que esperamos ansiosos para que saiam logo, mas a maioria deles só sairão em 2018. Diante disso montamos uma lista de jogos mais esperados que sairão no próximo ano.</p>
+                            <p><a href="post_cultural.html" class="">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/05_geek/geek_06.jpg" alt="Lan House">
+                        <div class="corGeek" style="height: 5px"></div>
+                        <div class="caption">
+                            <h3>5 lugares pra fazer corujão de CS em São Paulo</h3>
+                            <p>Não pense que estamos no começo dos anos 2000, quando era mais comum ir a uma lan house com a galera e varar a madrugada jogando um dos melhores FPS do mundo, o Counter-Strike..</p>
+                            <p><a href="post_cultural.html" class="">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/05_geek/geek_07.jpg" alt="Gadgets">
+                        <div class="corGeek" style="height: 5px"></div>
+                        <div class="caption">
+                            <h3>10 dos melhores gadgets para 2018</h3>
+                            <p>Terminada mais uma edição da Consumers Electronics Show, é hora de olhar para o que lá se apresentou e falar do que vale a pena falar. Drones subaquáticos, televisões, escovas de cabelo (sim, escovas de cabelo) e computadores foram apenas alguns dos melhores equipamentos apresentados em Las Vegas.</p>
+                            <p><a href="post_cultural.html" class="">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Fim do conteudo -->
+
+            <!-- Footer -->
+            <footer>
+                <div>
+                    <p class="text-center text-white">Boom &copy; Bandtec 2017</p>
+                </div>
+            </footer>
+            <!-- Fim Footer -->
+
+    </body>
+
+</html>
