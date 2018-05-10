@@ -179,7 +179,7 @@
         <!-- Footer -->
         <footer>
             <div>
-                <p class="text-center text-white">Boom &copy; Bandtec 2017</p>
+                <p class="text-center text-white">Boom &copy; Bandtec 2018</p>
             </div>
         </footer>
         <!-- Fim Footer -->
