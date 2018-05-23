@@ -74,12 +74,12 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'   => 'mssql:host=booom.database.windows.net;dbname=booom;trustservercertificate=true',
+	'dsn'   => 'sqlsrv:host=booom.database.windows.net;dbname=booom;trustservercertificate=true',
 	'hostname' => 'booom.database.windows.net',
 	'username' => 'booom',
 	'password' => 'Krystyn@',
 	'database' => 'booom',
-	'dbdriver' => 'mssql',
+	'dbdriver' => 'sqlsrv',
 	'dbprefix' => '',
 	'pconnect' => TRUE,
 	'db_debug' => TRUE,
