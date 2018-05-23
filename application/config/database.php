@@ -74,23 +74,24 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
-	'dbdriver' => 'mysqli',
+	'dsn'   => '',
+	'hostname' => 'sqlsrv:server=tcp:booom.database.windows.net,1433;database=booom;encrypt=true;trustservercertificate=true',
+	'username' => 'booom',
+	'password' => 'Krystyn@',
+	'database' => 'booom',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'pconnect' => TRUE,
+	'db_debug' => TRUE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => FALSE,
+	'encrypt' => TRUE,
+	'autoinit'=> TRUE,
 	'compress' => FALSE,
 	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
+	'failover' => array()
 );
+
