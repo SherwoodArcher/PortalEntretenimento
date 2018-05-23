@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'   => '',
-	'hostname' => 'booom.database.windows.net,1433;database=booom;encrypt=true;trustservercertificate=true',
+	'hostname' => 'mssql:host=booom.database.windows.net,1433;dbname=booom;encrypt=true;trustservercertificate=true',
 	'username' => 'booom',
 	'password' => 'Krystyn@',
 	'database' => 'booom',
