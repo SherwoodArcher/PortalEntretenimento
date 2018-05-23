@@ -74,8 +74,8 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'   => '',
-	'hostname' => 'mssql:host=booom.database.windows.net,1433;dbname=booom;encrypt=true;trustservercertificate=true',
+	'dsn'   => 'mssql:host=booom.database.windows.net,1433;dbname=booom;encrypt=true;trustservercertificate=true',
+	'hostname' => 'booom.database.windows.net',
 	'username' => 'booom',
 	'password' => 'Krystyn@',
 	'database' => 'booom',
