@@ -83,12 +83,12 @@
                 <div class="collapse navbar-collapse" id="BarraDeNavegacao">
                     <!-- Categorias da Barra de Navegação -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="<?php echo base_url('categorias/1');?>">Partiu Rolê</a></li>
-                        <li><a href="<?php echo base_url('categorias/2');?>">Descontração</a></li>
-                        <li><a href="<?php echo base_url('categorias/3');?>">Em Movimento</a></li>
-                        <li><a href="<?php echo base_url('categorias/4');?>">Na Faixa</a></li>
-                        <li><a href="<?php echo base_url('categorias/5');?>">Geek</a></li>
-                        <li><a href="<?php echo base_url('categorias/6');?>">Cultural</a></li>
+                        <li><a href="<?php echo base_url('categoria/partiurole');?>">Partiu Rolê</a></li>
+                        <li><a href="<?php echo base_url('categoria/descontracao');?>">Descontração</a></li>
+                        <li><a href="<?php echo base_url('categoria/emmovimento');?>">Em Movimento</a></li>
+                        <li><a href="<?php echo base_url('categoria/nafaixa');?>">Na Faixa</a></li>
+                        <li><a href="<?php echo base_url('categoria/geek');?>">Geek</a></li>
+                        <li><a href="<?php echo base_url('categoria/cultural');?>">Cultural</a></li>
                         <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>                    
                         <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
                     </ul>

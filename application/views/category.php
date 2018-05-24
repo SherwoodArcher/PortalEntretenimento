@@ -29,8 +29,8 @@
                         <div class='corCultural' style='height: 5px'></div>
                         <div class='caption'>
                             <h3>".$categoryItem['post_title']."</h3>
-                            <p>".$categoryItem['post_description']." ...</p>
-                            <p><a href='".base_url(post/$post_id)."' class=''>Mais detalhes</a></p>
+                            <p>".substr($categoryItem['post_description'], 0, 300)." ...</p>
+                            <p><a href='".base_url('post/'.$categoryItem['post_id'])."' class=''>Mais detalhes</a></p>
                         </div>
                     </div>
                 </div>";
