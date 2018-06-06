@@ -88,16 +88,14 @@ class Usuario extends CI_Controller {
                     'label' => 'Email',
                     'rules' => 'required|trim|valid_email'
                 )
-
-
          );
     
-        $this->form_validation->set_rules($config);
+        
 
         $dados['title'] = "Cadastro de usuário";
         $this->load->helper('form');
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('Nome');
+        $this->form_validation->set_rules($config);
         $this->load->view('newuser',$dados);  
       
 
