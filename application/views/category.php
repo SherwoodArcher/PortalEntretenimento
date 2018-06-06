@@ -2,9 +2,9 @@
 
 <!-- Inicio do conteudo -->
 <div>
-    <ol class="breadcrumb corCultural">
+    <ol class="breadcrumb cor<?=$category_name?>">
         <li><a href="<?php echo base_url()?>">Boom</a></li>
-        <li class="active">Cultural</li>
+        <li class="active"><?=$category_name?></li>
     </ol>
 </div>
 <div class="container-fluid">
