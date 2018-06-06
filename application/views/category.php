@@ -2,7 +2,9 @@
 
 <!-- Inicio do conteudo -->
 <div>
-    <ol class="breadcrumb cor<?=$category_name?>">
+    <ol class="breadcrumb cor<? echo strtolower(reg_replace("[^a-zA-Z0-9-]", "", strtr(utf8_decode(trim($category_name)), utf8_decode("áàãâéêíóôõúüñçÁÀÃÂÉÊÍÓÔÕÚÜÑÇ"),"aaaaeeiooouuncAAAAEEIOOOUUNC-")) );?>">
+
+    
         <li><a href="<?php echo base_url()?>">Boom</a></li>
         <li class="active"><?=$category_name?></li>
     </ol>
