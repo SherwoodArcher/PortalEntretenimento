@@ -1,4 +1,5 @@
 <?php $this->load->view('header');?>
+<script src="<?php echo base_url('assets/js/cadastrousuario.js');?>"></script>
         <div>
             <ol class="breadcrumb corPadrao" style="margin: 0px;">
                 <li><a href="/">Boom</a></li>
@@ -43,15 +44,15 @@
                                 <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
                                 <div class="col-md-4"> 
                                     <label required="" class="radio-inline" for="radios-0" >
-                                        <input name="sexo" id="sexo" value="feminino" type="radio" required>
+                                        <input name="sexo" value="F" type="radio" required>
                                         Feminino
                                     </label> 
                                     <label class="radio-inline" for="radios-1">
-                                        <input name="sexo" id="sexo" value="masculino" type="radio">
+                                        <input name="sexo" value="M" type="radio">
                                         Masculino
                                     </label>
                                     <label class="radio-inline" for="radios-2">
-                                        <input name="sexo" id="sexo" value="outros" type="radio">
+                                        <input name="sexo" value="O" type="radio">
                                         Outros
                                     </label>
                                 </div>

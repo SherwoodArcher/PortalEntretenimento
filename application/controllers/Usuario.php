@@ -88,8 +88,7 @@ class Usuario extends CI_Controller {
                     'label' => 'Email',
                     'rules' => 'required|trim|valid_email'
                 )
-         );
-    
+         );  
         
 
         $dados['title'] = "Cadastro de usuário";
