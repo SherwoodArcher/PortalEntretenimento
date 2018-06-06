@@ -129,22 +129,22 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="email">Email <h11>*</h11></label>
+                                <label class="col-md-2 control-label" for="email_n">Email <h11>*</h11></label>
                                 <div class="col-md-5">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                        <input id="email" name="email" class="form-control" placeholder="email@email.com"  value="<?php echo set_value('email'); ?>" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                                        <input id="email_n" name="email" class="form-control" placeholder="email@email.com"  value="<?php echo set_value('email'); ?>" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
                                         <?php echo form_error('email');?>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 control-label" for="senha">Senha <h11>*</h11></label>
+                                <label class="col-md-2 control-label" for="senha_n">Senha <h11>*</h11></label>
                                 <div class="col-md-3">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="senha" name="senha" class="form-control" placeholder="********"  value="<?php echo set_value('senha'); ?>" required type="password">
+                                        <input id="senha_n" name="senha" class="form-control" placeholder="********"  value="<?php echo set_value('senha'); ?>" required type="password">
                                         <?php echo form_error('senha');?>
                                     </div>
 
