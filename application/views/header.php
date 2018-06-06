@@ -120,7 +120,7 @@
                 <input type="password" id="senha" required placeholder="********" /><br/>
                 <div class="linkBranco">
                     <a type="submit">entrar</a><br/><br/>
-                    <a href="<?php base_url('usuario/novo');?>">não é cadastrado? cadastre-se aqui!</a><br/><br/>
+                    <a href="<?php echo base_url('index.php/usuario/novo');?>">não é cadastrado? cadastre-se aqui!</a><br/><br/>
                     <a href="#esqueci">esqueceu sua senha? clique aqui</a>
                 </div>
             </form>

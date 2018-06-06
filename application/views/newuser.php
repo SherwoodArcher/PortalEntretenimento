@@ -176,4 +176,18 @@
         </div>
         <!-- Fim do conteudo -->
 
+<<<<<<< HEAD
 <?php $this->load->view('footer');?>
+=======
+        <!-- Footer -->
+        <footer>
+            <div>
+                <p class="text-center text-white">Boom &copy; Bandtec 2018</p>
+            </div>
+        </footer>
+        <!-- Fim Footer -->
+
+    </body>
+
+</html>
+>>>>>>> Controller/Models
