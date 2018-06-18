@@ -151,7 +151,7 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="Cadastrar"></label>
                                 <div class="col-md-8">
-                                    <button id="Cadastrar" name="submit" class="btn btn-success" type="Submit">Cadastrar</button>
+                                    <input id="Cadastrar" name="submit" class="btn btn-success" type="Submit" value="Cadastrar" />
                                     <button id="Limpar" name="Limpar" class="btn btn-danger" type="Reset">Limpar</button>
                                 </div>
                             </div>
