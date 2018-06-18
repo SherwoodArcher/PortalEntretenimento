@@ -4,7 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Usuario extends CI_Controller {
 
 	function __construct(){
-        parent::__construct();       
+        parent::__construct();
+        $this->load->model('User_model');       
 	}
 
 	public function index()
@@ -16,12 +17,12 @@ class Usuario extends CI_Controller {
     
     public function novo()
 	{              
-
-        $dados['title'] = "Cadastro de usuário";
+        if($this->User_model->insert()){
+            $this->load->view('userhome');    
+        }
+        $dados['title'] = "Cadastro de usuário";        
         $this->load->helper('form');
-        $this->load->view('newuser',$dados);  
-      
-
+        $this->load->view('newuser',$dados); 
     }
 
 }
