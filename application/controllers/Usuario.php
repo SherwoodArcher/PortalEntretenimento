@@ -41,11 +41,6 @@ class Usuario extends CI_Controller {
                     ),
             ),
             array(
-                'field' => 'rua',
-                'label' => 'Rua',
-                'rules' => 'required|trim|max_length[50]'
-            ),
-            array(
                 'field' => 'numero',
                 'label' => 'Numero',
                 'rules' => 'required|trim|numeric|max_length[4]'
@@ -54,21 +49,6 @@ class Usuario extends CI_Controller {
                 'field' => 'complemento',
                 'label' => 'Complemento',
                 'rules' => 'required|trim|max_length[50]'
-            ),
-            array(
-                'field' => 'bairro',
-                'label' => 'Bairro',
-                'rules' => 'required|trim|max_length[50]'
-            ),
-            array(
-                'field' => 'cidade',
-                'label' => 'Cidade',
-                'rules' => 'required|trim|max_length[30]|min_length[3]'
-            ),
-            array(
-                'field' => 'estado',
-                'label' => 'Estado',
-                'rules' => 'required|trim|max_length[25]|min_length[2]'
             ),
             array(
                 'field' => 'dtnasc',
@@ -100,6 +80,35 @@ class Usuario extends CI_Controller {
             $this->User_model->insert();
             $this->load->view('userhome');                
         }            
+    }
+
+    public function login(){
+        $config = array(        
+            array(
+                'field' => 'email',
+                'label' => 'Email',
+                'rules' => 'required|trim|valid_email'
+            ),
+            array(
+                'field' => 'senha',
+                'label' => 'Senha',
+                'rules' => 'required|min_length[8]'
+            )
+        );
+        $this->form_validation->set_rules($config);
+        if ($this->form_validation->run() === FALSE){
+            $dados['title'] = "Cadastro de usuário";        
+            $this->load->helper('form');
+            $this->load->view('newuser',$dados); 
+        } else{
+            $select = $this->User_model->select();
+            if($select['user_password'] === $this->input->post('senha_l')){
+                $_SESSION['user_id'] = $select['user_id'];
+                echo '<script type="text/javascript">alert("Você está logado(a)")</script>';
+            }else{
+                echo '<script type="text/javascript">alert("Dados incorretos, por favor tente novamente")</script>';
+            }                
+        }
     }
 
 }

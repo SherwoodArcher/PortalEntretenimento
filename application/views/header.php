@@ -111,19 +111,20 @@
 
         <div id="login">
             <div class="close">×</div>
-            <form>
+            <?php echo validation_errors(); ?>
+            <?php echo form_open('usuario/login'); ?>
                 <div class="login">login</div>
-                <label for="email">usuário:</label>
-                <input type="email" value="" id="email" placeholder="exemplo@exemplo.com.br" required /><br/>
+                <label for="email_l">usuário:</label>
+                <input type="email" value="" id="email_l" name="email_l" placeholder="exemplo@exemplo.com.br" required /><br/>
 
                 <label for="senha">senha:</label><br/>
-                <input type="password" id="senha" required placeholder="********" /><br/>
+                <input type="password" id="senha_l" name="senha_l" required placeholder="********" /><br/>
                 <div class="linkBranco">
-                    <a type="submit">entrar</a><br/><br/>
+                    <a type="submit" name="submit">entrar</a><br/><br/>
                     <a href="<?php echo base_url('index.php/usuario/novo');?>">não é cadastrado? cadastre-se aqui!</a><br/><br/>
                     <a href="#esqueci">esqueceu sua senha? clique aqui</a>
                 </div>
-            </form>
+            <?php echo form_close();?>
         </div>
 
 

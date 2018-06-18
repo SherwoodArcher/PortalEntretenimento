@@ -3,11 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User_model extends CI_Model {
 
-    public function __construct()
-    {
-        $this->load->database();
-    }
-
     public function insert()
     {
         $data = array(
@@ -21,5 +16,11 @@ class User_model extends CI_Model {
             'user_password' => $this->input->post('senha')          
         );       
         return $this->db->insert('Usuario', $data);
+    }
+
+    public function select(){       
+        $sql = "SELECT user_id, user_password FROM Usuario WHERE user_email = ?";
+        $query = $this->db->query($sql,array($this->input->post('email_l')));        
+        return $query->row();
     }
 }
