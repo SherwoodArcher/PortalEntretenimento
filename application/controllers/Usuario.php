@@ -17,12 +17,17 @@ class Usuario extends CI_Controller {
     
     public function novo()
 	{              
-        if($this->User_model->insert()){
-            $this->load->view('userhome');    
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules($config);
+        if ($this->form_validation->run() === FALSE){
+            $dados['title'] = "Cadastro de usuário";        
+            $this->load->helper('form');
+            $this->load->view('newuser',$dados); 
+        } else{
+            $this->User_model->insert();
+            $this->load->view('userhome');                
         }
-        $dados['title'] = "Cadastro de usuário";        
-        $this->load->helper('form');
-        $this->load->view('newuser',$dados); 
+        
     }
 
 }
