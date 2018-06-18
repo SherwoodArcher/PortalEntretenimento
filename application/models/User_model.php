@@ -18,10 +18,7 @@ class User_model extends CI_Model {
             'user_cep' => $this->input->post('cep'),  
             'user_address_details' => $this->input->post('numero').",".$this->input->post('complemento'),  
             'user_email' => $this->input->post('email'),  
-            'user_password' => $this->input->post('senha'),  
-            'user_access' => 1,  
-            'user_preferences' => null,
-            'user_status' => 1              
+            'user_password' => $this->input->post('senha')          
         );       
         return $this->db->insert('Usuario', $data);
     }

@@ -77,7 +77,7 @@ $db['default'] = array(
 	'dsn'   => 'sqlsrv:host=booom.database.windows.net;dbname=booom;trustservercertificate=true',
 	'hostname' => 'booom.database.windows.net',
 	'username' => 'booom',
-	'password' => 'Krystyn@',
+	'password' => 'Krystyn@2',
 	'database' => 'booom',
 	'dbdriver' => 'sqlsrv',
 	'dbprefix' => '',
