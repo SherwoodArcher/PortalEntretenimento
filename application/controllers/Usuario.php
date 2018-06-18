@@ -27,7 +27,7 @@ class Usuario extends CI_Controller {
             array(
                 'field' => 'cpf',
                 'label' => 'CPF do usuário',
-                'rules' => 'required|trim|regex_match[/^[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}$/]',
+                'rules' => 'required|trim|regex_match[/^[0-9]{11}$/]',
                 'errors' => array(
                         'required' => 'Você precisa digitar um %s.',
                 ),
@@ -35,7 +35,7 @@ class Usuario extends CI_Controller {
             array(
                 'field' => 'cep',
                 'label' => 'Cep da residência do usuário',
-                'rules' => 'required|trim|regex_match[/^[0-9]{5}-[0-9]{3}$/]',
+                'rules' => 'required|trim|regex_match[/^[0-9]{8}$/]',
                 'errors' => array(
                         'required' => 'Você precisa digitar um %s.',
                     ),
