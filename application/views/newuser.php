@@ -8,6 +8,7 @@
         </div>
 
         <div class="padding10px">            
+            <?php echo validation_errors(); ?>
             <?php echo form_open('usuario/novo','class=form-horizontal'); ?>
                 <fieldset>
                     <div class="panel panel-primary">
@@ -150,7 +151,7 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="Cadastrar"></label>
                                 <div class="col-md-8">
-                                    <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                                    <button id="Cadastrar" name="submit" class="btn btn-success" type="Submit">Cadastrar</button>
                                     <button id="Limpar" name="Limpar" class="btn btn-danger" type="Reset">Limpar</button>
                                 </div>
                             </div>
