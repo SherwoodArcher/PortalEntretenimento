@@ -78,7 +78,8 @@ class Usuario extends CI_Controller {
             $this->load->view('newuser',$dados); 
         } else{
             $this->User_model->insert();
-            $this->load->view('userhome');                
+            echo '<script type="text/javascript">alert("Você se cadastrou")</script>';
+            $this->load->view('index');                
         }            
     }
 
