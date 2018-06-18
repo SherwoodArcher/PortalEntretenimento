@@ -20,7 +20,8 @@ class User_model extends CI_Model {
             'user_email' => $this->input->post('email'),  
             'user_password' => $this->input->post('senha'),  
             'user_access' => 1,  
-            'user_preferences' => null              
+            'user_preferences' => null,
+            'user_status' => 1              
         );       
         return $this->db->insert('Usuario', $data);
     }
