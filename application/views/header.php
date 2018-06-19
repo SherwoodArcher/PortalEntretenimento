@@ -111,7 +111,6 @@
 
         <div id="login">
             <div class="close">×</div>
-            <?php echo validation_errors(); ?>
             <?php echo form_open('usuario/login'); ?>
                 <div class="login">login</div>
                 <label for="email_l">usuário:</label>
