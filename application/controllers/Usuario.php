@@ -105,9 +105,9 @@ class Usuario extends CI_Controller {
             //var_dump($select);
             if($select['user_password'] == $this->input->post('senha_l')){
                 $_SESSION['user_id'] = $select['user_id'];
-                echo '<script type="text/javascript">alert("Você está logado(a)")</script>';
+                echo '<script type="text/javascript">alert("Você está logado(a), e será redirecionado para a página principal"); window.location = "index.php/Home/";</script>';
             }else{
-                echo '<script type="text/javascript">alert("Dados incorretos, por favor tente novamente")</script>';
+                echo '<script type="text/javascript">alert("Dados incorretos, por favor tente novamente. Você será redirecionado para a página principal"); window.location = "index.php/Home/";</script>';
             }               
         }
     }
