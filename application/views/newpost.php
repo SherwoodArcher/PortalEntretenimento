@@ -1,3 +1,4 @@
+<?php $this->load->view("header");?>
 <div>
     <ol class="breadcrumb corPadrao" style="margin: 0px;">
         <li><a href="/">Boom</a></li>
@@ -64,3 +65,4 @@
     <?php echo form_close();?>
 </div>
 <!-- Fim do conteudo -->
+<?php $this->load->view('footer');?>
