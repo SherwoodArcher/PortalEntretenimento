@@ -21,6 +21,6 @@ class User_model extends CI_Model {
     public function select(){       
         $sql = "SELECT user_id, user_password FROM Usuario WHERE user_email = ?";
         $query = $this->db->query($sql,array($this->input->post('email_l')));        
-        return $query->row();
+        return $query->row_array();
     }
 }
