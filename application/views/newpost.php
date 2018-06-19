@@ -53,10 +53,12 @@
                     </div>
 
                     <!-- Button (Double) -->
-                    <div class="form-group">                        
-                        <div class="col-md-8">
-                            <input id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit" value="Cadastrar">
-                            <button id="Limpar" name="Limpar" class="btn btn-danger" type="Reset">Limpar</button>
+                    <div class="form-group"> 
+                        <div class="row">                       
+                            <div class="col-md-6 col-md-offset-2">
+                                <input id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit" value="Cadastrar">
+                                <button id="Limpar" name="Limpar" class="btn btn-danger" type="Reset">Limpar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
