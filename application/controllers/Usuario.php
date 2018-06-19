@@ -102,7 +102,7 @@ class Usuario extends CI_Controller {
             
         } else{
             $select = $this->User_model->select();
-            echo $select;
+            var_dump($select);
             /*if($select['user_password'] === $this->input->post('senha_l')){
                 $_SESSION['user_id'] = $select['user_id'];
                 echo '<script type="text/javascript">alert("Você está logado(a)")</script>';
