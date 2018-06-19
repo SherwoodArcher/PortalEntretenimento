@@ -88,11 +88,11 @@
                         <li><a href="<?php echo base_url('index.php/categoria/emmovimento');?>">Em Movimento</a></li>
                         <li><a href="<?php echo base_url('index.php/categoria/nafaixa');?>">Na Faixa</a></li>
                         <li><a href="<?php echo base_url('index.php/categoria/geek');?>">Geek</a></li>
-                        <li><a href="<?php echo base_url('index.php/categoria/cultural');?>">Cultural</a></li>
+                        <li><a href="<?php echo base_url('index.php/categoria/cultural');?>">Cultural</a></li>                        
+                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-user"></span></a></li>                    
                         <?php if (isset($_SESSION['user_id'])) {?>
-                        <li class="mobile-hide"><a href="#login"><span class="glyphicon glyphicon-plus"></span></a></li>                    
+                        <li class="mobile-hide"><a href="<?php echo base_url('index.php/post/novo');?>"><span class="glyphicon glyphicon-plus"></span></a></li>
                         <? } ?>
-                        <li class="mobile-hide"><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
                     </ul>
                     <!-- Fim das Categorias da Barra de Navegação -->
 
