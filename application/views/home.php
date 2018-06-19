@@ -16,19 +16,19 @@
             <div class="carousel-inner" role="listbox">
                 <!-- Slide Ativo -->
                 <div class="item active">
-                    <img src="img/StarWars.jpg" alt="Poster Guerra nas Estrelas">
+                    <img src="<?php echo base_url("StarWars.jpg")?>" alt="Poster Guerra nas Estrelas">
                 </div>
                 <!-- Fim do Slide Ativo -->
 
                 <!-- Slide 2 -->
                 <div class="item">
-                    <img src="img/ComicCon.jpg" alt="Comic Con 2017">
+                    <img src="<?php echo base_url("ComicCon.jpg")?>" alt="Comic Con 2017">
                 </div>
                 <!-- Fim Slide 2 -->
 
                 <!-- Slide 3 -->
                 <div class="item">
-                    <img src="img/ShowRock.jpg" alt="Show de Rock">
+                    <img src="<?php echo base_url("ShowRock.jpg")?>" alt="Show de Rock">
                 </div>
                 <!-- Fim Slide 3 -->
             </div>
@@ -56,7 +56,7 @@
                                 <a href="post_cultural.html"> 01 Jan
                             </div>
                             <div class="col-xs-4 col-sm-2 col-lg-4">
-                                <img src="img/calendario/calendario_01.jpg" />
+                                <img src="<?php echo base_url("calendario/calendario_01.jpg")?>" />
                             </div>
                             <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
                                 Rock in Rio - Pista Principal</a>                                            
@@ -70,7 +70,7 @@
                                 <a href="post_cultural.html">02 Fev
                             </div>
                             <div class="col-xs-4 col-sm-2 col-lg-4">
-                                <img src="img/calendario/calendario_02.jpg" />
+                                <img src="<?php echo base_url("calendario/calendario_02.jpg")?>" />
                             </div>
                             <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
                                 Avengers - Infinity War</a>                                          
@@ -84,7 +84,7 @@
                                 <a href="post_cultural.html">03 Mar
                             </div>
                             <div class="col-xs-4 col-sm-2 col-lg-4">
-                                <img src="img/calendario/calendario_03.jpg" />
+                                <img src="<?php echo base_url("calendario/calendario_03.jpg")?>" />
                             </div>
                             <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
                                 Maratona São Silvestre - 42Km</a>                                      
@@ -98,7 +98,7 @@
                                 <a href="post_cultural.html">04 Abr
                             </div>
                             <div class="col-xs-4 col-sm-2 col-lg-4">
-                                <img src="img/calendario/calendario_04.jpg" />
+                                <img src="<?php echo base_url("calendario/calendario_04.jpg")?>" />
                             </div>
                             <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
                                 Como se divertir sem gastar nada</a>                                            
@@ -112,7 +112,7 @@
                                 <a href="post_cultural.html">05 Mai
                             </div>
                             <div class="col-xs-4 col-sm-2 col-lg-4">
-                                <img src="img/calendario/calendario_05.jpg" />
+                                <img src="<?php echo base_url("calendario/calendario_05.jpg")?>" />
                             </div>
                             <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
                                 ComicCon - com 15% de Desconto</a>                                            
@@ -126,7 +126,7 @@
                                 <a href="post_cultural.html">06 Jun
                             </div>
                             <div class="col-xs-4 col-sm-2 col-lg-4">
-                                <img src="img/calendario/calendario_06.jpg" />
+                                <img src="<?php echo base_url("calendario/calendario_06.jpg")?>" />
                             </div>
                             <div class="col-xs-6 col-sm-3 col-lg-6 formatacaoTexto textLeft linkPreto">
                                 MAM - Museu de Arte Moderna</a>                                           
@@ -149,26 +149,26 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade partiuRole linkPreto">
 
-            <a href="<?php echo base_url('index.php/categoria/partiurole');?>">partiu rolê
+            <a href="<?php echo base_url("index.php/categoria/partiurole")?>">partiu rolê
 
                 <div class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
                     <div class="carousel-inner" role="listbox">
                         <!-- Slide Ativo -->
                         <div class="item active">
-                            <img src="img/01_partiu_role/partiu_role_01.jpg">
+                            <img src="<?php echo base_url("01_partiu_role/partiu_role_01.jpg")?>">
                         </div>
                         <!-- Fim do Slide Ativo -->
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <img src="img/01_partiu_role/partiu_role_02.jpg">
+                            <img src="<?php echo base_url("01_partiu_role/partiu_role_02.jpg")?>">
                         </div>
                         <!-- Fim Slide 2 -->
 
                         <!-- Slide 3 -->
                         <div class="item">
-                            <img src="img/01_partiu_role/partiu_role_03.jpg">
+                            <img src="<?php echo base_url("01_partiu_role/partiu_role_03.jpg")?>">
                         </div>
                         <!-- Fim Slide 3 -->
                     </div>
@@ -185,26 +185,26 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade descontracao linkPreto">
 
-            <a href="<?php echo base_url('index.php/categoria/descontracao');?>">descontração
+            <a href="<?php echo base_url("'index.php/categoria/descontracao');?>">descontração
 
                 <div id="sliderDescontracao" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
                     <div class="carousel-inner" role="listbox">
                         <!-- Slide Ativo -->
                         <div class="item active">
-                            <img src="img/02_descontracao/descontracao_01.jpg">
+                            <img src="<?php echo base_url("02_descontracao/descontracao_01.jpg")?>">
                         </div>
                         <!-- Fim do Slide Ativo -->
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <img src="img/02_descontracao/descontracao_02.jpg">
+                            <img src="<?php echo base_url("02_descontracao/descontracao_02.jpg")?>">
                         </div>
                         <!-- Fim Slide 2 -->
 
                         <!-- Slide 3 -->
                         <div class="item">
-                            <img src="img/02_descontracao/descontracao_03.jpg">
+                            <img src="<?php echo base_url("02_descontracao/descontracao_03.jpg")?>">
                         </div>
                         <!-- Fim Slide 3 -->
                     </div>
@@ -221,26 +221,26 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade emMovimento linkPreto">
 
-            <a href="<?php echo base_url('index.php/categoria/emmovimento');?>">em movimento
+            <a href="<?php echo base_url("'index.php/categoria/emmovimento');?>">em movimento
 
                 <div id="sliderEmMovimento" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
                     <div class="carousel-inner" role="listbox">
                         <!-- Slide Ativo -->
                         <div class="item active">
-                            <img src="img/03_em_movimento/em_movimento_01.jpg">
+                            <img src="<?php echo base_url("03_em_movimento/em_movimento_01.jpg")?>">
                         </div>
                         <!-- Fim do Slide Ativo -->
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <img src="img/03_em_movimento/em_movimento_02.jpg">
+                            <img src="<?php echo base_url("03_em_movimento/em_movimento_02.jpg")?>">
                         </div>
                         <!-- Fim Slide 2 -->
 
                         <!-- Slide 3 -->
                         <div class="item">
-                            <img src="img/03_em_movimento/em_movimento_03.jpg">
+                            <img src="<?php echo base_url("03_em_movimento/em_movimento_03.jpg")?>">
                         </div>
                         <!-- Fim Slide 3 -->
                     </div>
@@ -257,26 +257,26 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade naFaixa linkPreto">
 
-            <a href="<?php echo base_url('index.php/categoria/nafaixa');?>">na faixa                            
+            <a href="<?php echo base_url("'index.php/categoria/nafaixa');?>">na faixa                            
 
                 <div id="sliderNaFaixa" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
                     <div class="carousel-inner" role="listbox">
                         <!-- Slide Ativo -->
                         <div class="item active">
-                            <img src="img/04_na_faixa/na_faixa_01.jpg">
+                            <img src="<?php echo base_url("04_na_faixa/na_faixa_01.jpg")?>">
                         </div>
                         <!-- Fim do Slide Ativo -->
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <img src="img/04_na_faixa/na_faixa_02.jpg">
+                            <img src="<?php echo base_url("04_na_faixa/na_faixa_02.jpg")?>">
                         </div>
                         <!-- Fim Slide 2 -->
 
                         <!-- Slide 3 -->
                         <div class="item">
-                            <img src="img/04_na_faixa/na_faixa_03.jpg">
+                            <img src="<?php echo base_url("04_na_faixa/na_faixa_03.jpg")?>">
                         </div>
                         <!-- Fim Slide 3 -->
                     </div>
@@ -293,26 +293,26 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade geek linkPreto">
 
-            <a href="<?php echo base_url('index.php/categoria/geek');?>">geek
+            <a href="<?php echo base_url("'index.php/categoria/geek');?>">geek
 
                 <div id="sliderGeek" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
                     <div class="carousel-inner" role="listbox">
                         <!-- Slide Ativo -->
                         <div class="item active">
-                            <img src="img/05_geek/geek_01.jpg">
+                            <img src="<?php echo base_url("05_geek/geek_01.jpg")?>">
                         </div>
                         <!-- Fim do Slide Ativo -->
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <img src="img/05_geek/geek_02.jpg">
+                            <img src="<?php echo base_url("05_geek/geek_02.jpg")?>">
                         </div>
                         <!-- Fim Slide 2 -->
 
                         <!-- Slide 3 -->
                         <div class="item">
-                            <img src="img/05_geek/geek_03.jpg">
+                            <img src="<?php echo base_url("05_geek/geek_03.jpg")?>">
                         </div>
                         <!-- Fim Slide 3 -->
                     </div>
@@ -329,26 +329,26 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade cultural linkPreto">
 
-            <a href="<?php echo base_url('index.php/categoria/cultural');?>">cultural
+            <a href="<?php echo base_url("'index.php/categoria/cultural');?>">cultural
 
                 <div id="sliderCultural" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
                     <div class="carousel-inner" role="listbox">
                         <!-- Slide Ativo -->
                         <div class="item active">
-                            <img src="img/06_cultural/cultural_01.jpg">
+                            <img src="<?php echo base_url("06_cultural/cultural_01.jpg")?>">
                         </div>
                         <!-- Fim do Slide Ativo -->
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <img src="img/06_cultural/cultural_02.jpg">
+                            <img src="<?php echo base_url("06_cultural/cultural_02.jpg")?>">
                         </div>
                         <!-- Fim Slide 2 -->
 
                         <!-- Slide 3 -->
                         <div class="item">
-                            <img src="img/06_cultural/cultural_03.jpg">
+                            <img src="<?php echo base_url("06_cultural/cultural_03.jpg")?>">
                         </div>
                         <!-- Fim Slide 3 -->
                     </div>
