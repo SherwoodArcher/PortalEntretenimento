@@ -87,21 +87,19 @@ class Usuario extends CI_Controller {
         $this->load->library('form_validation');
         $config = array(        
             array(
-                'field' => 'email',
+                'field' => 'email_l',
                 'label' => 'Email',
                 'rules' => 'required|trim|valid_email'
             ),
             array(
-                'field' => 'senha',
+                'field' => 'senha_l',
                 'label' => 'Senha',
                 'rules' => 'required|min_length[8]'
             )
         );
         $this->form_validation->set_rules($config);
         if ($this->form_validation->run() === FALSE){
-            $dados['title'] = "Cadastro de usuário";        
-            $this->load->helper('form');
-            $this->load->view('newuser',$dados); 
+            
         } else{
             $select = $this->User_model->select();
             if($select['user_password'] === $this->input->post('senha_l')){
