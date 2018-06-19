@@ -84,6 +84,7 @@ class Usuario extends CI_Controller {
     }
 
     public function login(){
+        $this->load->library('form_validation');
         $config = array(        
             array(
                 'field' => 'email',
