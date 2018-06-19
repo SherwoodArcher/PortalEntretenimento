@@ -20,10 +20,10 @@ class Post extends CI_Controller {
         }
 
         public function novo(){
-                if(!isset($_SESSION["user_id"])){
+                $logado = $this->session->userdata('user_id');
+                if($logado == NULL){
                         echo '<script type="text/javascript">alert("Você não está logado! Redirecionando para a página principal"); window.location = "/"; </script>';
                 }
-                $this->load->library('form_validation');
                 $config = array(
                     array(
                         'field' => 'nome',
@@ -79,12 +79,11 @@ class Post extends CI_Controller {
                 );  
                 $this->form_validation->set_rules($config);
                 if ($this->form_validation->run() === FALSE){
-                    $dados['title'] = "Cadastro de usuário";        
-                    $this->load->helper('form');
-                    $this->load->view('newuser',$dados); 
+                    $dados['title'] = "Cadastro de post";        
+                    $this->load->view('newpost',$dados); 
                 } else{
-                    $this->User_model->insert();
-                    echo '<script type="text/javascript">alert("Você se cadastrou")</script>';
+                    $this->Post_model->insert();
+                    echo '<script type="text/javascript">alert("O post foi cadastrado! Redirecionando para a página principal")</script>';
                     $this->load->view('index');                
                 }
         }
