@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Post extends CI_Controller {
 
 	function __construct(){
-        parent::__construct();    
-        $this->load->helper('form'); 
+        parent::__construct();
+        $this->load->helper('form');     
         $this->load->library('form_validation');       
 	}
 
