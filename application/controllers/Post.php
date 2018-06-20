@@ -14,10 +14,10 @@ class Post extends CI_Controller {
 	public function index()
 	{                  
                 $this->load->model('post_model','post'); 
-                $data['query'] = $this->post->select($this->input->get('post_id'));
-                $data['title'] = "";
-                var_dump($data);        
-                //$this->load->view('post',$data);    
+                $data = $this->post->select($this->input->get('post_id'));
+                $data['title'] = $data["post_title"];
+                //var_dump($data);        
+                $this->load->view('post',$data);    
         }
 
         public function novo(){
