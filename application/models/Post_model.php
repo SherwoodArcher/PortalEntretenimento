@@ -8,7 +8,7 @@ class Post_model extends CI_Model {
         $data = array(
             'post_title' => $this->input->post('nome'),
             'post_user_id' => $this->session->user_id,  
-            'post_date_time' => NOW(),  
+            'post_date_time' => date("Y-m-d"),  
             'post_photos' => $this->input->post('foto'),  
             'post_description' => $this->input->post('descricao'),  
             'post_category' => $this->input->post('category')         
