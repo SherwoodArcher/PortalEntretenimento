@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="categoria">Selecione a Categoria</label>  
                         <div class="col-md-2">                                    
-                            <select class="col-md-12" id="categoria" required="" >                                       
+                            <select class="col-md-12" id="categoria" name="categoria" required="" >                                       
                                 <option value="1">Partiu Rolê</option>
                                 <option value="2">Descontração</option>
                                 <option value="3">Em Movimento</option>
