@@ -7,15 +7,14 @@ class Post extends CI_Controller {
                 parent::__construct();
                 $this->load->helper('form');     
                 $this->load->library('form_validation');
-                $this->load->library('session');  
-                $this->load->model('post_model','post');      
+                $this->load->library('session');                    
 	}
 
 	public function index($post_id = null)
-	{
-                  
+	{                  
+                $this->load->model('post_model','post');    
                 $data['query'] = $this->post->select($post_id);
-                $data['title'] = $data['query']['post_title'];
+                $data['title'] = "";
                 var_dump($data);        
                 //$this->load->view('post',$data);    
         }
