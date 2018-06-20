@@ -149,7 +149,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade partiuRole linkPreto">
 
-            <a href="<?php echo base_url("assets/img/index.php/categoria/partiurole")?>">partiu rolê
+            <a href="<?php echo base_url("index.php/categoria/partiurole")?>">partiu rolê
 
                 <div class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
@@ -185,7 +185,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade descontracao linkPreto">
 
-            <a href="<?php echo base_url("assets/img/index.php/categoria/descontracao");?>">descontração
+            <a href="<?php echo base_url("index.php/categoria/descontracao");?>">descontração
 
                 <div id="sliderDescontracao" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
@@ -221,7 +221,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade emMovimento linkPreto">
 
-            <a href="<?php echo base_url("assets/img/index.php/categoria/emmovimento");?>">em movimento
+            <a href="<?php echo base_url("index.php/categoria/emmovimento");?>">em movimento
 
                 <div id="sliderEmMovimento" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
@@ -257,7 +257,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade naFaixa linkPreto">
 
-            <a href="<?php echo base_url("assets/img/index.php/categoria/nafaixa");?>">na faixa                            
+            <a href="<?php echo base_url("index.php/categoria/nafaixa");?>">na faixa                            
 
                 <div id="sliderNaFaixa" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
@@ -293,7 +293,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade geek linkPreto">
 
-            <a href="<?php echo base_url("assets/img/index.php/categoria/geek");?>">geek
+            <a href="<?php echo base_url("index.php/categoria/geek");?>">geek
 
                 <div id="sliderGeek" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
@@ -329,7 +329,7 @@
     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 margem10pxTopo">
         <div class="formatacaoTexto efeitoOpacidade cultural linkPreto">
 
-            <a href="<?php echo base_url("assets/img/index.php/categoria/cultural");?>">cultural
+            <a href="<?php echo base_url("index.php/categoria/cultural");?>">cultural
 
                 <div id="sliderCultural" class="carousel slide mobile-hide" data-ride="carousel">
                     <!-- Inicio Slider -->
