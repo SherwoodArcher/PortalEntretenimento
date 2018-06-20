@@ -12,7 +12,8 @@ class Post extends CI_Controller {
 
 	public function index($post_id = null)
 	{                  
-                $this->load->model('post_model','post');    
+                $this->load->model('post_model','post'); 
+                echo $post_id;   
                 $data['query'] = $this->post->select($post_id);
                 $data['title'] = "";
                 var_dump($data);        
@@ -47,9 +48,10 @@ class Post extends CI_Controller {
                     $dados['title'] = "Cadastro de post";        
                     $this->load->view('newpost',$dados); 
                 } else{
-                    $this->Post_model->insert();
-                    echo '<script type="text/javascript">alert("O post foi cadastrado! Redirecionando para a página principal")</script>';
-                    $this->load->view('index');                
+                        $this->load->model('post_model','post'); 
+                        $this->Post_model->insert();
+                        echo '<script type="text/javascript">alert("O post foi cadastrado! Redirecionando para a página principal")</script>';
+                        $this->load->view('index');                
                 }
         }
 
