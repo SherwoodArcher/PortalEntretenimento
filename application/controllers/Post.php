@@ -7,7 +7,8 @@ class Post extends CI_Controller {
                 parent::__construct();
                 $this->load->helper('form');     
                 $this->load->library('form_validation');
-                $this->load->library('session');                    
+                $this->load->library('session');   
+                $this->load->helper('url');                 
 	}
 
 	public function index()
