@@ -15,8 +15,9 @@ class Post extends CI_Controller {
 	{
                   
                 $data['query'] = $this->post->select($post_id);
-                $data['title'] = $data['query']['post_title'];        
-                $this->load->view('post',$data);    
+                $data['title'] = $data['query']['post_title'];
+                var_dump($data);        
+                //$this->load->view('post',$data);    
         }
 
         public function novo(){
@@ -26,55 +27,20 @@ class Post extends CI_Controller {
                 }
                 $config = array(
                     array(
-                        'field' => 'nome',
-                        'label' => 'Nome do Usuário',
+                        'field' => 'titulo',
                         'rules' => 'required|trim|min_length[3]'
                     ),
                     array(
-                        'field' => 'cpf',
-                        'label' => 'CPF do usuário',
-                        'rules' => 'required|trim|regex_match[/^[0-9]{11}$/]',
-                        'errors' => array(
-                                'required' => 'Você precisa digitar um %s.',
-                        ),
+                        'field' => 'foto',
+                        'rules' => 'required|trim|min_length[3]'                    
                     ),
                     array(
-                        'field' => 'cep',
-                        'label' => 'Cep da residência do usuário',
-                        'rules' => 'required|trim|regex_match[/^[0-9]{8}$/]',
-                        'errors' => array(
-                                'required' => 'Você precisa digitar um %s.',
-                            ),
+                        'field' => 'descricao',
+                        'rules' => 'required|trim|min_length[3]'
                     ),
                     array(
-                        'field' => 'numero',
-                        'label' => 'Numero',
-                        'rules' => 'required|trim|numeric|max_length[4]'
-                    ),
-                    array(
-                        'field' => 'complemento',
-                        'label' => 'Complemento',
-                        'rules' => 'required|trim|max_length[50]'
-                    ),
-                    array(
-                        'field' => 'dtnasc',
-                        'label' => 'Data de nascimento',
-                        'rules' => 'required|trim',
-                    ),
-                    array(
-                        'field' => 'senha',
-                        'label' => 'Senha',
-                        'rules' => 'required|min_length[8]'
-                    ),
-                    array(
-                        'field' => 'confirmeSenha',
-                        'label' => 'Confirme sua senha',
-                        'rules' => 'required|min_length[8]'
-                    ),
-                    array(
-                        'field' => 'email',
-                        'label' => 'Email',
-                        'rules' => 'required|trim|valid_email'
+                        'field' => 'categoria',
+                        'rules' => 'required|trim|numeric|max_length[1]'
                     )
                 );  
                 $this->form_validation->set_rules($config);
