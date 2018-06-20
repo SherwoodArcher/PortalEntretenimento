@@ -10,9 +10,9 @@ class Post extends CI_Controller {
                 $this->load->library('session');                    
 	}
 
-	public function index($post_id = 0)
+	public function index($post_id)
 	{                  
-                $this->load->model('post_model','post'); 
+                //$this->load->model('post_model','post'); 
                 echo $post_id;   
                 $data['query'] = $this->post->select($post_id);
                 $data['title'] = "";
