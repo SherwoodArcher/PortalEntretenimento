@@ -15,9 +15,9 @@ class Post extends CI_Controller {
 	{                  
                 $this->load->model('post_model','post'); 
                 $data = $this->post->select($this->input->get('post_id'));
-                $data['title'] = $data["post_title"];
-                var_dump($data);        
-                //$this->load->view('post',$data);    
+                $data[0]['title'] = $data["post_title"];
+                //var_dump($data);        
+                $this->load->view('post',$data[0]);    
         }
 
         public function novo(){
