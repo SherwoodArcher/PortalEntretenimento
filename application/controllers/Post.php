@@ -13,9 +13,8 @@ class Post extends CI_Controller {
 
 	public function index()
 	{                  
-                //$this->load->model('post_model','post'); 
-                echo $this->input->get('post_id');  
-                //$data['query'] = $this->post->select($post_id);
+                $this->load->model('post_model','post'); 
+                //$data['query'] = $this->post->select($this->input->get('post_id'));
                 $data['title'] = "";
                 var_dump($data);        
                 //$this->load->view('post',$data);    
