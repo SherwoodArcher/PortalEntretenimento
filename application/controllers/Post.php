@@ -49,8 +49,7 @@ class Post extends CI_Controller {
                 } else{
                         $this->load->model('post_model','post'); 
                         $this->post->insert();
-                        echo '<script type="text/javascript">alert("O post foi cadastrado! Redirecionando para a página principal")</script>';
-                        $this->load->view('index');                
+                        echo '<script type="text/javascript">alert("O post foi cadastrado! Redirecionando para a página principal"); window.location = "/";</script>';
                 }
         }
 
