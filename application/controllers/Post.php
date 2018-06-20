@@ -16,7 +16,7 @@ class Post extends CI_Controller {
                 echo $post_id;   
                 $data['query'] = $this->post->select($post_id);
                 $data['title'] = "";
-                var_dump($data);        
+                //var_dump($data);        
                 //$this->load->view('post',$data);    
         }
 
