@@ -4,7 +4,7 @@
 <div>
     <ol class="breadcrumb corPadrao">    
         <li><a href="<?php echo base_url()?>">Boom</a></li>        
-        <li class="active"><?=$post_title?></li>
+        <li class="active" style="color: #FFF"><?=$post_title?></li>
     </ol>
 </div>
 <div class="container-fluid">
