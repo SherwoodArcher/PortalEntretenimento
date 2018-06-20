@@ -17,7 +17,7 @@ class Post_model extends CI_Model {
     }
 
     public function select($post_id){
-        $sql = "SELECT post_title, post_photos, post_description  FROM Post WHERE post_id = ? ";
+        $sql = "SELECT post_title, post_photos, post_description FROM Post WHERE post_id = ? ";
         $query = $this->db->query($sql,array($post_id));        
         return $query->result_array();
     }

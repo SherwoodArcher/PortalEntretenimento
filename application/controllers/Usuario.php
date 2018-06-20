@@ -81,8 +81,7 @@ class Usuario extends CI_Controller {
             $this->load->view('newuser',$dados); 
         } else{
             $this->User_model->insert();
-            echo '<script type="text/javascript">alert("Você se cadastrou")</script>';
-            $this->load->view('index');                
+            echo '<script type="text/javascript">alert("Você se cadastrou, e será redirecionado para a página principal"); window.location = "/";</script>';                          
         }            
     }
 
