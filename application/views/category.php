@@ -27,7 +27,7 @@
         }
         echo "  <div class='col-xs-12 col-sm-6 col-md-4'>
                     <div class='thumbnail'>
-                        <img src='".$categoryItem['post_photos']."' alt='Teatro Municipal'>
+                        <img src='".$categoryItem['post_photos']."' alt='Desculpe, roubaram a imagem :)'>
                         <div class='cor".$category_class."' style='height: 5px'></div>
                         <div class='caption'>
                             <h3>".$categoryItem['post_title']."</h3>
