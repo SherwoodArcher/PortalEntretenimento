@@ -15,8 +15,7 @@ class Post extends CI_Controller {
 	{                  
                 $this->load->model('post_model','post'); 
                 $data = $this->post->select($this->input->get('post_id'));
-                $data[0]['title'] = $data["post_title"];
-                //var_dump($data);        
+                $data[0]['title'] = $data[0]["post_title"];                        
                 $this->load->view('post',$data[0]);    
         }
 
