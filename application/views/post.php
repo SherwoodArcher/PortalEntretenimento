@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">            
             <?php
-            if(file_exists($post_photos)){ ?>
+            if(isset($post_photos)){ ?>
                 <img src="<?=$post_photos?>" />
             <?}?>
         </div>
